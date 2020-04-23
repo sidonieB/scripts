@@ -3,6 +3,7 @@
 # It can also plot the actual score values instead of piecharts
 # Originally written by Sidonie BELLOT - RBG Kew - s.bellot@kew.org
 # Use and modify as you wish, but please don't hesitate to give feedback!
+# WARNING!!! OLD, PREFER plot_Astral_trees_v2.R ALSO IN THIS REPOSITORY !!!!
 #############################################################################################
 library(ape)
 library(phytools)
