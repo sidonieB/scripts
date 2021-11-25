@@ -1,7 +1,9 @@
 ###################################################################################
-# Originally written by Sidonie BELLOT - RBG Kew - s.bellot@kew.org
-# Use and modify as you wish, but please don't hesitate to give feedback!
 # This script generates commands to run pxrr rooting function of the package phyx
+# Version 4 
+# 05 January 2019
+# Originally written by Sidonie BELLOT
+# Use and modify as you wish, but please don't hesitate to give feedback!
 # on a set of trees, with one command per tree.
 # It accomodates different outgroups per tree, and deals with non-monophyly of the
 # user-given outgroup.
@@ -22,11 +24,11 @@ library(gtools)
 ###############################################
 
 
-inputDir <- "Trees/gene_trees/"     # directory with the trees and the outgroup (OG) list only
+inputDir <- "/Users/sidob/Desktop/Palms/PAFTOL/Basselinia/Trees/gene_trees/"     # directory with the trees and the outgroup (OG) list only
 inputOG <- "outgroups.txt"                                        # outgroups list (see below about how to make it)
 output <- "A_pxrr_commands"                                     # name of the output (list of pxrr commands)
 pattern_trees <- "_tree"                                              # whatever pattern is common to all your tree files AND ONLY TO THEM
-path_to_pxrr <- "/home/user/software/phyx/src/pxrr"            # absolute path to pxrr on the computer where you will run the pxrr command
+path_to_pxrr <- "/home/rodrigo/software/phyx/src/pxrr"            # absolute path to pxrr on the computer where you will run the pxrr command
 
 # How to make the outgroups list:
 # List of the outgroups in order of priority, and with OG in clades on the same line and separated by " ; "
